@@ -2,6 +2,8 @@
 
 You can use the [editor on GitHub](https://github.com/dandtaylor/MetroDelayBikeShare/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
+[Here](Analysis_metro_bikeshare_commuters.ipynb) is my analysis notebook where all of my code is shown
+
 the new [map of the redline stations used in analysis](map_red.html)!
 
 
