@@ -1,0 +1,240 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_f1db2d9cff8140dcbdb5a1864347dc98 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_f1db2d9cff8140dcbdb5a1864347dc98" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_f1db2d9cff8140dcbdb5a1864347dc98 = L.map('map_f1db2d9cff8140dcbdb5a1864347dc98', {
+                                           center:[38.993841,-77.031321],
+                                           zoom: 15,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_6a9812f8904c488081236ffc56ba5c97 = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_f1db2d9cff8140dcbdb5a1864347dc98);
+
+        
+        
+            
+
+            var marker_fdb632caf04a40b988e9cae2d1cbca1b = L.marker(
+                [38.993841,-77.031321],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f1db2d9cff8140dcbdb5a1864347dc98);
+            
+        
+            
+
+                var icon_898fb30c0b314ffb80199b59346959ba = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fdb632caf04a40b988e9cae2d1cbca1b.setIcon(icon_898fb30c0b314ffb80199b59346959ba);
+            
+        
+            
+            var popup_96dbd8797b054cc885a9351f6b03a3e8 = L.popup({maxWidth: '300'});
+
+            
+                var html_52acad374d90463aa10e79a5c3b29912 = $('         <div id="html_52acad374d90463aa10e79a5c3b29912"                 style="width: 100.0%; height: 100.0%;">                 Silver Spring</div>                 ')[0];
+                popup_96dbd8797b054cc885a9351f6b03a3e8.setContent(html_52acad374d90463aa10e79a5c3b29912);
+            
+
+            marker_fdb632caf04a40b988e9cae2d1cbca1b.bindPopup(popup_96dbd8797b054cc885a9351f6b03a3e8);
+
+            
+        
+        
+            
+
+            var marker_2f122987a127451e9dfd9b074b3abd08 = L.marker(
+                [38.99521,-77.02918],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f1db2d9cff8140dcbdb5a1864347dc98);
+            
+        
+            
+
+                var icon_7c63706f23ee43a588bf5b92d2c8bbe1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2f122987a127451e9dfd9b074b3abd08.setIcon(icon_7c63706f23ee43a588bf5b92d2c8bbe1);
+            
+        
+            
+            var popup_b3866d257df543ef94e3def99aeaf77e = L.popup({maxWidth: '300'});
+
+            
+                var html_cbc8c692cb6f485bb3cf551cb627bd59 = $('         <div id="html_cbc8c692cb6f485bb3cf551cb627bd59"                 style="width: 100.0%; height: 100.0%;">                 Silver Spring Metro/Colesville Rd &amp; Wayne Ave</div>                 ')[0];
+                popup_b3866d257df543ef94e3def99aeaf77e.setContent(html_cbc8c692cb6f485bb3cf551cb627bd59);
+            
+
+            marker_2f122987a127451e9dfd9b074b3abd08.bindPopup(popup_b3866d257df543ef94e3def99aeaf77e);
+
+            
+        
+        
+        
+        </script>
+        
