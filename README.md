@@ -2,7 +2,7 @@
 
 You can use the [editor on GitHub](https://github.com/dandtaylor/MetroDelayBikeShare/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-[map of the redline stations used in analysis](map_red.html)
+the new [map of the redline stations used in analysis](map_red.html)!
 
 how does the theme change?
 
