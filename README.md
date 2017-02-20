@@ -18,25 +18,29 @@ bikeshare_weekend = bikeshare_rides[~bikeshare_rides['Day'].str[0].isin(list('MT
 
 
 ![Weekday vs weekend ridership](weekday_v_weekend.png)
+<br><br><br>
 
 ![weekday casual v registered](weekday casual v registered.png)
+<br><br><br>
 
 ![ride distance morning rush](ride distance morning rush.png)
+<br><br><br>
 
 ![ride distance evening rush](ride distance evening rush.png)
+<br><br><br>
 
 ![ride distance morning v evening rush](ride distance morning v evening rush.png)
+<br><br><br>
 
 ![ride distance evening casual v registered rush](ride distance evening casual v registered rush.png)
-
-
+<br><br><br>
 
 
 
 Using the `vincenty` function available in the `geopy` package, I then determined which of these stations are within 0.15 miles of a metro station.
 
 
-This map shows metro stations (red) and those bikeshare stations which were considered *near* to a metro station.
+This map shows metro stations (red) and those bikeshare stations which were considered *near* to a metro station. Clicking on the image will load an interactive map that you can explore!
 
 <a href="metro_nearbikes_map.html
 " target="_blank"><img align="middle" src="metro_nearbikes_map_image.PNG" 
@@ -47,7 +51,7 @@ alt="Map!" width="800" height="625" border="10" /></a>
 
 
 
-This map shows all stations, both metro and bikeshare that were used in this analysis. Green flags indicate metro stations, red flags indicate bikeshare stations considered near metro stations, and blue flags bikeshare stations considered far. For this analysis 0.15 miles was used as the cutoff between near and far.
+This map shows all stations, both metro and bikeshare that were used in this analysis. Green flags indicate metro stations, red flags indicate bikeshare stations considered near metro stations, and blue flags bikeshare stations considered far. For this analysis 0.15 miles was used as the cutoff between near and far. Clicking on the image will load an interactive map that you can explore!
 
 <a href="all_stations_map.html
 " target="_blank"><img align="middle" src="all_stations_map_image.PNG" 
@@ -61,6 +65,19 @@ ax.set_title('Capital Bikeshare Weekend Ridership')
 (bikeshare_weekend.groupby('Hour')['Hour'].count() / weekend_days).plot(kind='bar',alpha=0.5, color='r', ax=ax)
 plt.show()
 ```
+Most Weekday Routes Among Casual Riders | Count
+:--- | :---:
+Jefferson Dr & 14th St SW to Jefferson Dr & 14th St SW                                                  | 4007
+Jefferson Dr & 14th St SW to Lincoln Memorial                                                           | 3650
+Lincoln Memorial to Jefferson Memorial                                                                  | 3243
+Lincoln Memorial to Jefferson Dr & 14th St SW                                                           | 3036
+Lincoln Memorial to Lincoln Memorial                                                                    | 2712
+Jefferson Memorial to Lincoln Memorial                                                                  | 1696
+Ohio Dr & West Basin Dr SW / MLK & FDR Memorials to Ohio Dr & West Basin Dr SW / MLK & FDR Memorials    | 1595
+Jefferson Memorial to Jefferson Dr & 14th St SW                                                         | 1328
+Jefferson Dr & 14th St SW to Jefferson Memorial                                                         | 1311
+Lincoln Memorial to Ohio Dr & West Basin Dr SW / MLK & FDR Memorials                   
+
 ---
 #### Complete analysis
 All code used for data collection, cleaning, and analysis is available in a [jupyter notebook](https://github.com/dandtaylor/MetroShare/blob/master/Analysis_metro_bikeshare_commuters.ipynb). 
