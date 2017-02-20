@@ -9,9 +9,18 @@ the new [map of the redline stations used in analysis](map_red.html)!
 
 ![Weekday vs weekend ridership](weekday_v_weekend.png)
 
+This map shows metro stations (red) and those bikeshare stations which were considered *near* to a metro station.
+
 <a href="metro_nearbikes_map.html
 " target="_blank"><img align="middle" src="metro_nearbikes_map_image.PNG" 
 alt="Map!" width="519" height="404" border="10" /></a>
+
+This map shows all stations, both metro and bikeshare that were used in this analysis. Green flags indicate metro stations, red flags indicate bikeshare stations considered near metro stations, and blue flags bikeshare stations considered far. For this analysis 0.15 miles was used as the cutoff between near and far.
+
+<a href="all_stations_map.html
+" target="_blank"><img align="middle" src="all_stations_map_image.PNG" 
+alt="Map!" width="417" height="356" border="10" /></a>
+
 
 ```python
 fig, ax = plt.subplots(figsize=[6, 4])
