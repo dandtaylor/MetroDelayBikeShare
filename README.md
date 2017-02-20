@@ -52,7 +52,11 @@ Columbus Circle / Union Station to 4th & E St SW                                
 D St & Maryland Ave NE to Columbus Circle / Union Station                                           |1291
 15th & F St NE to Columbus Circle / Union Station                                                   |1274
 
-<br>
+<a href="morning_10_map.html
+" target="_blank"><img align="middle" src="morning_10_map_image.PNG" 
+alt="Map!" width="800" height="683" border="10" /></a>
+
+<br><br><br>
 
 Most Popular Evening Rush hour Routes Among Registered Riders | Count
 :--- | :---:
@@ -67,7 +71,11 @@ L'Enfant Plaza / 7th & C St SW to Columbus Circle / Union Station               
 Eastern Market Metro / Pennsylvania Ave & 7th St SE to 13th & D St NE                               |1083
 USDA / 12th & Independence Ave SW to Columbus Circle / Union Station                                |1069
 
-<br>
+<a href="evening_10_map.html
+" target="_blank"><img align="middle" src="evening_10_map_image.PNG" 
+alt="Map!" width="800" height="683" border="10" /></a>
+
+<br><br><br>
 
 Most Popular Weekday Routes Among Casual Riders | Count
 :--- | :---:
@@ -81,6 +89,12 @@ Ohio Dr & West Basin Dr SW / MLK & FDR Memorials to Ohio Dr & West Basin Dr SW /
 Jefferson Memorial to Jefferson Dr & 14th St SW                                                         | 1328
 Jefferson Dr & 14th St SW to Jefferson Memorial                                                         | 1311
 Lincoln Memorial to Ohio Dr & West Basin Dr SW / MLK & FDR Memorials                                    | 1139
+
+<a href="casual_10_map.html
+" target="_blank"><img align="middle" src="causal_10_map_image.PNG" 
+alt="Map!" width="800" height="683" border="10" /></a>
+
+<br><br><br><br>
 
 This map shows metro stations (red) and those bikeshare stations which were considered *near* to a metro station. Clicking on the image will load an interactive map that you can explore!
 
