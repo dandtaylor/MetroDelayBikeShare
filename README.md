@@ -11,7 +11,7 @@ the new [map of the redline stations used in analysis](map_red.html)!
 
 <a href="metro_nearbikes_map.html
 " target="_blank"><img align="middle" src="metro_nearbikes_map_image.PNG" 
-alt="Map!" width="346" height="269" border="10" /></a>
+alt="Map!" width="519" height="404" border="10" /></a>
 
 ```python
 fig, ax = plt.subplots(figsize=[6, 4])
