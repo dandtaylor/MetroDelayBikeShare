@@ -6,7 +6,7 @@ Click [here](https://github.com/dandtaylor/MetroShare/blob/master/Analysis_metro
 
 the new [map of the redline stations used in analysis](map_red.html)!
 
-
+![Weekday vs weekend ridership](weekday_v_weekend.png)
 
 #### Data sources
 WMATA api
