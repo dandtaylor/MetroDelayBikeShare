@@ -39,6 +39,48 @@ bikeshare_weekend = bikeshare_rides[~bikeshare_rides['Day'].str[0].isin(list('MT
 
 Using the `vincenty` function available in the `geopy` package, I then determined which of these stations are within 0.15 miles of a metro station.
 
+Most Popular Morning Rush hour Routes Among Registered Riders | Count
+:--- | :---:
+8th & F St NE to Columbus Circle / Union Station                                                    |1783
+11th & H St NE to Columbus Circle / Union Station                                                   |1684
+Columbus Circle / Union Station to M St & New Jersey Ave SE                                         |1526
+13th & D St NE to Columbus Circle / Union Station                                                   |1497
+Columbus Circle / Union Station to USDA / 12th & Independence Ave SW                                |1464
+Carroll & Ethan Allen Ave to Takoma Metro                                                           |1341
+Lincoln Park / 13th & East Capitol St NE  to Eastern Market Metro / Pennsylvania Ave & 7th St SE    |1320
+Columbus Circle / Union Station to 4th & E St SW                                                    |1294
+D St & Maryland Ave NE to Columbus Circle / Union Station                                           |1291
+15th & F St NE to Columbus Circle / Union Station                                                   |1274
+
+<br>
+
+Most Popular Evening Rush hour Routes Among Registered Riders | Count
+:--- | :---:
+Columbus Circle / Union Station to 8th & F St NE                                                    |2456
+Columbus Circle / Union Station to 11th & H St NE                                                   |1499
+Eastern Market Metro / Pennsylvania Ave & 7th St SE to Lincoln Park / 13th & East Capitol St NE     |1427
+Columbus Circle / Union Station to 6th & H St NE                                                    |1265
+Columbus Circle / Union Station to 13th & H St NE                                                   |1255
+Columbus Circle / Union Station to 13th & D St NE                                                   |1220
+Columbus Circle / Union Station to 15th & F St NE                                                   |1195
+L'Enfant Plaza / 7th & C St SW to Columbus Circle / Union Station                                   |1112
+Eastern Market Metro / Pennsylvania Ave & 7th St SE to 13th & D St NE                               |1083
+USDA / 12th & Independence Ave SW to Columbus Circle / Union Station                                |1069
+
+<br>
+
+Most Popular Weekday Routes Among Casual Riders | Count
+:--- | :---:
+Jefferson Dr & 14th St SW to Jefferson Dr & 14th St SW                                                  | 4007
+Jefferson Dr & 14th St SW to Lincoln Memorial                                                           | 3650
+Lincoln Memorial to Jefferson Memorial                                                                  | 3243
+Lincoln Memorial to Jefferson Dr & 14th St SW                                                           | 3036
+Lincoln Memorial to Lincoln Memorial                                                                    | 2712
+Jefferson Memorial to Lincoln Memorial                                                                  | 1696
+Ohio Dr & West Basin Dr SW / MLK & FDR Memorials to Ohio Dr & West Basin Dr SW / MLK & FDR Memorials    | 1595
+Jefferson Memorial to Jefferson Dr & 14th St SW                                                         | 1328
+Jefferson Dr & 14th St SW to Jefferson Memorial                                                         | 1311
+Lincoln Memorial to Ohio Dr & West Basin Dr SW / MLK & FDR Memorials                                    | 1139
 
 This map shows metro stations (red) and those bikeshare stations which were considered *near* to a metro station. Clicking on the image will load an interactive map that you can explore!
 
@@ -65,18 +107,7 @@ ax.set_title('Capital Bikeshare Weekend Ridership')
 (bikeshare_weekend.groupby('Hour')['Hour'].count() / weekend_days).plot(kind='bar',alpha=0.5, color='r', ax=ax)
 plt.show()
 ```
-Most Weekday Routes Among Casual Riders | Count
-:--- | :---:
-Jefferson Dr & 14th St SW to Jefferson Dr & 14th St SW                                                  | 4007
-Jefferson Dr & 14th St SW to Lincoln Memorial                                                           | 3650
-Lincoln Memorial to Jefferson Memorial                                                                  | 3243
-Lincoln Memorial to Jefferson Dr & 14th St SW                                                           | 3036
-Lincoln Memorial to Lincoln Memorial                                                                    | 2712
-Jefferson Memorial to Lincoln Memorial                                                                  | 1696
-Ohio Dr & West Basin Dr SW / MLK & FDR Memorials to Ohio Dr & West Basin Dr SW / MLK & FDR Memorials    | 1595
-Jefferson Memorial to Jefferson Dr & 14th St SW                                                         | 1328
-Jefferson Dr & 14th St SW to Jefferson Memorial                                                         | 1311
-Lincoln Memorial to Ohio Dr & West Basin Dr SW / MLK & FDR Memorials                   
+
 
 ---
 #### Complete analysis
