@@ -1,5 +1,9 @@
-## Metro station locations and Capital Bikeshare ridership
+## Analysis of the impact of metro station location on commuter bikeshare habits
 
+Member Type | Population
+:---: | :---:
+Casual | 628,777 
+Registered | 2,520,541 
 
 
 
