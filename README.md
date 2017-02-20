@@ -1,17 +1,26 @@
 ## Analysis of the impact of metro station location on commuter bikeshare habits
+[Capital Bikeshare](https://www.capitalbikeshare.com/system-data) makes its data available to download in quarterly files. For this analysis I downloaded every trip for the most recently available year.
+
+We see that approximately 80% of all rides are from registered users.
 
 Member Type | Population
 :---: | :---:
 Casual | 628,777 
 Registered | 2,520,541 
 
+<br>
 
+We can further slice this data up into weekdays or weekends.
+```python
+bikeshare_weekday = bikeshare_rides[bikeshare_rides['Day'].str[0].isin(list('MTWF'))]
+bikeshare_weekend = bikeshare_rides[~bikeshare_rides['Day'].str[0].isin(list('MTWF'))]
+```
 
 
 ![Weekday vs weekend ridership](weekday_v_weekend.png)
 
 
-
+Using the `vincenty` function available in the `geopy` package, I then determined which of these stations are within 0.15 miles of a metro station.
 
 
 This map shows metro stations (red) and those bikeshare stations which were considered *near* to a metro station.
@@ -19,7 +28,7 @@ This map shows metro stations (red) and those bikeshare stations which were cons
 <a href="metro_nearbikes_map.html
 " target="_blank"><img align="middle" src="metro_nearbikes_map_image.PNG" 
 alt="Map!" width="800" height="625" border="10" /></a>
-white space?
+
 
 <br><br><br><br><br><br><br><br>
 
@@ -41,7 +50,7 @@ plt.show()
 ```
 ---
 #### Complete analysis
-Click [here](https://github.com/dandtaylor/MetroShare/blob/master/Analysis_metro_bikeshare_commuters.ipynb) to view my jupyter notebook with my complete analysis.
+All code used for data collection, cleaning, and analysis is available in a [jupyter notebook](https://github.com/dandtaylor/MetroShare/blob/master/Analysis_metro_bikeshare_commuters.ipynb). 
 
 #### Data sources
 [WMATA api](https://developer.wmata.com/docs/services/)  
