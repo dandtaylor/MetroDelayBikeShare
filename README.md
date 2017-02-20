@@ -8,11 +8,14 @@ the new [map of the redline stations used in analysis](map_red.html)!
 
 ![Weekday vs weekend ridership](weekday_v_weekend.png)
 
+
 #### Data sources
 WMATA api
 DCopendata
 Capital Bikeshare
 
+
+![here](https://github.com/dandtaylor/MetroShare/blob/master/Analysis_metro_bikeshare_commuters.ipynb)
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
