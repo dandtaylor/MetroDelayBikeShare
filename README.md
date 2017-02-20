@@ -4,11 +4,14 @@ Click [here](https://github.com/dandtaylor/MetroShare/blob/master/Analysis_metro
 
 the new [map of the redline stations used in analysis](map_red.html)!
 
+<div style="text-align:center"><img src ="weekday_v_weekend.png" /></div>
+
+
 ![Weekday vs weekend ridership](weekday_v_weekend.png)
 
 <a href="metro_nearbikes_map.html
 " target="_blank"><img src="metro_nearbikes_map_image.PNG" 
-alt="IMAGE ALT TEXT HERE" width="231" height="179" border="10" /></a>
+alt="Map!" width="231" height="179" border="10" /></a>
 
 ```python
 fig, ax = plt.subplots(figsize=[6, 4])
