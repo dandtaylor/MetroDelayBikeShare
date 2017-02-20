@@ -8,9 +8,9 @@ the new [map of the redline stations used in analysis](map_red.html)!
 
 ![Weekday vs weekend ridership](weekday_v_weekend.png)
 
-<a href="map_red.html
-" target="_blank"><img src="test_map_image.png" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="metro_nearbikes_map.html
+" target="_blank"><img src="metro_nearbikes_map_image.PNG" 
+alt="IMAGE ALT TEXT HERE" width="924" height="715" border="10" /></a>
 
 
 #### Data sources
