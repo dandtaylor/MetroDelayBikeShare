@@ -125,7 +125,8 @@ plt.show()
 
 ---
 #### Complete analysis
-All code used for data collection, cleaning, and analysis is available in a [jupyter notebook](https://github.com/dandtaylor/MetroShare/blob/master/Analysis_metro_bikeshare_commuters.ipynb). 
+All code used for data collection, cleaning, and analysis is available in a [jupyter notebook](https://github.com/dandtaylor/MetroShare/blob/master/Analysis_metro_bikeshare_commuters.ipynb).  
+All notebooks used for data cleaning and *most* data is available in the repository [code tab](https://github.com/dandtaylor/MetroShare).
 
 #### Data sources
 [WMATA api](https://developer.wmata.com/docs/services/)  
