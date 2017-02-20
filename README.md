@@ -19,6 +19,19 @@ bikeshare_weekend = bikeshare_rides[~bikeshare_rides['Day'].str[0].isin(list('MT
 
 ![Weekday vs weekend ridership](weekday_v_weekend.png)
 
+![weekday casual v registered](weekday casual v registered.png)
+
+![ride distance morning rush](ride distance morning rush.png)
+
+![ride distance evening rush](ride distance evening rush.png)
+
+![ride distance morning v evening rush](ride distance morning v evening rush.png)
+
+![ride distance evening casual v registered rush](ride distance evening casual v registered rush.png)
+
+
+
+
 
 Using the `vincenty` function available in the `geopy` package, I then determined which of these stations are within 0.15 miles of a metro station.
 
