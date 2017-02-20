@@ -91,7 +91,7 @@ Jefferson Dr & 14th St SW to Jefferson Memorial                                 
 Lincoln Memorial to Ohio Dr & West Basin Dr SW / MLK & FDR Memorials                                    | 1139
 
 <a href="casual_10_map.html
-" target="_blank"><img align="middle" src="causal_10_map_image.png" 
+" target="_blank"><img align="middle" src="casual_10_map_image.png" 
 alt="Map!" width="800" height="683" border="10" /></a>
 
 <br><br><br><br>
