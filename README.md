@@ -1,6 +1,4 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/dandtaylor/MetroDelayBikeShare/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Metro station locations and Capital Bikeshare ridership
 
 Click [here](https://github.com/dandtaylor/MetroShare/blob/master/Analysis_metro_bikeshare_commuters.ipynb) to download my analysis notebook where all of my code is shown
 
