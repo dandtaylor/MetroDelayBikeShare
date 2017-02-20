@@ -53,7 +53,7 @@ D St & Maryland Ave NE to Columbus Circle / Union Station                       
 15th & F St NE to Columbus Circle / Union Station                                                   |1274
 
 <a href="morning_10_map.html
-" target="_blank"><img align="middle" src="morning_10_map_image.PNG" 
+" target="_blank"><img align="middle" src="morning_10_map_image.png" 
 alt="Map!" width="800" height="683" border="10" /></a>
 
 <br><br><br>
@@ -72,7 +72,7 @@ Eastern Market Metro / Pennsylvania Ave & 7th St SE to 13th & D St NE           
 USDA / 12th & Independence Ave SW to Columbus Circle / Union Station                                |1069
 
 <a href="evening_10_map.html
-" target="_blank"><img align="middle" src="evening_10_map_image.PNG" 
+" target="_blank"><img align="middle" src="evening_10_map_image.png" 
 alt="Map!" width="800" height="683" border="10" /></a>
 
 <br><br><br>
@@ -91,7 +91,7 @@ Jefferson Dr & 14th St SW to Jefferson Memorial                                 
 Lincoln Memorial to Ohio Dr & West Basin Dr SW / MLK & FDR Memorials                                    | 1139
 
 <a href="casual_10_map.html
-" target="_blank"><img align="middle" src="causal_10_map_image.PNG" 
+" target="_blank"><img align="middle" src="causal_10_map_image.png" 
 alt="Map!" width="800" height="683" border="10" /></a>
 
 <br><br><br><br>
