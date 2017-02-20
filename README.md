@@ -10,7 +10,7 @@ the new [map of the redline stations used in analysis](map_red.html)!
 ![Weekday vs weekend ridership](weekday_v_weekend.png)
 
 <a href="metro_nearbikes_map.html
-" target="_blank"><img align="center" src="metro_nearbikes_map_image.PNG" 
+" target="_blank"><img align="middle" src="metro_nearbikes_map_image.PNG" 
 alt="Map!" width="231" height="179" border="10" /></a>
 
 ```python
