@@ -9,7 +9,7 @@ the new [map of the redline stations used in analysis](map_red.html)!
 ![Weekday vs weekend ridership](weekday_v_weekend.png)
 
 <a href="map_red.html
-" target="_blank"><img src="map_red.html" 
+" target="_blank"><img src="test_map_image.png" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
