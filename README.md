@@ -10,7 +10,7 @@ the new [map of the redline stations used in analysis](map_red.html)!
 
 <a href="metro_nearbikes_map.html
 " target="_blank"><img src="metro_nearbikes_map_image.PNG" 
-alt="IMAGE ALT TEXT HERE" width="924" height="715" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="462" height="358" border="10" /></a>
 
 
 #### Data sources
