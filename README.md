@@ -12,11 +12,18 @@ the new [map of the redline stations used in analysis](map_red.html)!
 " target="_blank"><img src="metro_nearbikes_map_image.PNG" 
 alt="IMAGE ALT TEXT HERE" width="231" height="179" border="10" /></a>
 
+```python
+fig, ax = plt.subplots(figsize=[6, 4])
+ax.set_ylabel('Average number of rides per hour per day')
+ax.set_title('Capital Bikeshare Weekend Ridership')
+(bikeshare_weekend.groupby('Hour')['Hour'].count() / weekend_days).plot(kind='bar',alpha=0.5, color='r', ax=ax)
+plt.show()
+```
 
 #### Data sources
-WMATA api  
-DCopendata  
-Capital Bikeshare  
+[WMATA api](https://developer.wmata.com/docs/services/)  
+[OpenDataDC](http://www.opendatadc.org/dataset/wmata-disruption-reports)  
+[Capital Bikeshare](https://www.capitalbikeshare.com/system-data)  
 
 
 ![here](https://github.com/dandtaylor/MetroShare/blob/master/Analysis_metro_bikeshare_commuters.ipynb)  
