@@ -8,14 +8,9 @@ Throughout this analysis I used multiple python libraries – namely pandas, pic
 It is valuable to initially understand some of the larger trends in the bike share data. By splicing the data by day of the week, and then further by hour, we see that the weekday data has two large spikes associated with the morning and evening rush hour (centered on 8AM and 5PM). 
 
 
-<br>
-
-We can further slice this data up into weekdays or weekends. Visualizing the data as average frequency of rides throughout the day is an effective way of picking out some quick groupings in ride type.
-
-
 ![Weekday vs weekend ridership](weekday_v_weekend.png)
 
-<br><br><br>
+<br><br>
  
 By doing some quick comparisons of the slice sizes, we see that about 74% of rides occur during the work week and about 80% of those are from registered riders (those with a long term membership). 
 
@@ -32,7 +27,7 @@ Weekend | 815,974
 <br><br>
 
 ---
-## Considering location
+## Considering location and distance
 
 By merging the bike share location and bike share rider ship data, and using the `vincenty` function available in the `geopy` package, we can calculate the distance of each bike share station to each metro stations. We can then create flags for if a ride began, or terminated at a bike share station within 0.15 miles of a metro station.
 
@@ -48,6 +43,7 @@ We see that there is a spike right around 0.5 miles for rides concluding near me
 ![ride distance morning v evening rush](ride distance morning v evening rush.png)
 <br><br><br>
 ---
+## Route popularity
 
 We can support this observation by looking at the most popular routes during each time period both as tables and through mapping. By considering the 10 most popular routes during the morning rush, we can see that many of them began in Northeast DC and ended near the union station metro stop. Then, during the evening rush hour, the trend is reversed as all of the most popular trips originate near metro stations and many of them end in the Northeast region.  
 Furthermore, T-tests comparing ridership in the morning vs. in the evening support the hypothesis that people are riding towards the metro in the morning and away from the metro at night (with 99% confidence). 
@@ -97,6 +93,7 @@ The below map indicates the locations of metro stations (green flags), the most 
 alt="Map!" width="800" height="683" border="10" /></a>
 
 <br><br><br>
+## Non-rush hour patterns
 
 ![ride distance evening casual v registered rush](ride distance evening casual v registered rush.png)
 
@@ -116,7 +113,7 @@ Jefferson Dr & 14th St SW to Jefferson Memorial                                 
 Lincoln Memorial to Ohio Dr & West Basin Dr SW / MLK & FDR Memorials                                    | 1139
 
 <br><br>
-For comparison to non-commuter ridership, the below map indicates the locations of metro stations (green flags), the most popular casual rider midweek starting stations (red flags), and the most popular casual rider midweek destination stations (blue flags).
+The below map indicates the locations of metro stations (green flags), the most popular casual rider midweek starting stations (red flags), and the most popular casual rider midweek destination stations (blue flags).
 <br>
 
 <a href="casual_10_map.html
