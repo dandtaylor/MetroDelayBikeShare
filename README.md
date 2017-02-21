@@ -14,6 +14,7 @@ It is valuable to initially understand some of the larger trends in the bike sha
  
 By doing some quick comparisons of the slice sizes, we see that about 74% of rides occur during the work week and about 80% are from registered riders (those with a long term membership). 
 <br>
+
 Member or Day Type | Population
 :---: | :---:
 Casual | 628,777 
