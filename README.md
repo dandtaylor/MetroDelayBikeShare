@@ -124,7 +124,7 @@ alt="Map!" width="800" height="683" border="10" /></a>
 
 <br><br><br>
 ---
-<br><br><br>
+
 ## Metro stop and Bikeshare station maps used for this analysis
 
 This map shows metro stations (red) and those bikeshare stations which were considered *near* to a metro station. Clicking on the image will load an interactive map that you can explore!
@@ -156,4 +156,5 @@ All notebooks used for data cleaning and *most* data is available in the reposit
 [OpenDataDC](http://www.opendatadc.org/dataset/wmata-disruption-reports)  
 [Capital Bikeshare](https://www.capitalbikeshare.com/system-data)  
 [Capital Bikeshare XML feed](https://feeds.capitalbikeshare.com/stations/stations.xml)
+
 ---
