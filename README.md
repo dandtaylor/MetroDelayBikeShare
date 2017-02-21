@@ -23,8 +23,6 @@ Weekend | 815,974
 
 <br><br>
 
-![weekday casual v registered](weekday casual v registered.png)
-<br><br>
 
 ---
 ## Considering location and route distance
