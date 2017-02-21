@@ -1,7 +1,7 @@
 ## Analysis of the impact of metro station location on commuter bikeshare habits
 [Capital Bikeshare](https://www.capitalbikeshare.com/system-data) makes its data available to download in quarterly files. For this analysis I downloaded every trip for the most recently available year.
 
-We see that approximately 80% of all rides are from registered users.
+We see that approximately 80% of all rides are from registered users, and 74% occur during the work week.
 
 Member Type | Population
 :---: | :---:
@@ -54,6 +54,10 @@ Columbus Circle / Union Station to 4th & E St SW                                
 D St & Maryland Ave NE to Columbus Circle / Union Station                                           |1291
 15th & F St NE to Columbus Circle / Union Station                                                   |1274
 
+<br>
+The below map indicates the locations of metro stations (green flags), the most popular morning rush hour starting statins (red flags), and the most popular morning rush hour desination stations (blue flgs).
+<br>
+
 <a href="morning_10_map.html
 " target="_blank"><img align="middle" src="morning_10_map_image.png" 
 alt="Map!" width="800" height="683" border="10" /></a>
@@ -72,7 +76,9 @@ Columbus Circle / Union Station to 15th & F St NE                               
 L'Enfant Plaza / 7th & C St SW to Columbus Circle / Union Station                                   |1112
 Eastern Market Metro / Pennsylvania Ave & 7th St SE to 13th & D St NE                               |1083
 USDA / 12th & Independence Ave SW to Columbus Circle / Union Station                                |1069
-
+<br>
+The below map indicates the locations of metro stations (green flags), the most popular evening rush hour starting statins (red flags), and the most popular evening rush hour desination stations (blue flgs).
+<br>
 <a href="evening_10_map.html
 " target="_blank"><img align="middle" src="evening_10_map_image.png" 
 alt="Map!" width="800" height="683" border="10" /></a>
@@ -91,6 +97,10 @@ Ohio Dr & West Basin Dr SW / MLK & FDR Memorials to Ohio Dr & West Basin Dr SW /
 Jefferson Memorial to Jefferson Dr & 14th St SW                                                         | 1328
 Jefferson Dr & 14th St SW to Jefferson Memorial                                                         | 1311
 Lincoln Memorial to Ohio Dr & West Basin Dr SW / MLK & FDR Memorials                                    | 1139
+
+<br>
+For comparison to non-commuter ridership, the below map indicates the locations of metro stations (green flags), the most popular casual rider midweek starting stations (red flags), and the most popular casual rider midweek destination stations (blue flags).
+<br>
 
 <a href="casual_10_map.html
 " target="_blank"><img align="middle" src="casual_10_map_image.png" 
