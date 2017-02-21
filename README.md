@@ -1,5 +1,5 @@
 ## Analysis of the impact of metro station location on commuter bikeshare habits
-[Capital Bikeshare](https://www.capitalbikeshare.com/system-data) makes its data available to download in quarterly files. For this analysis I downloaded every trip for the most recently available year. The metro station location data was obtained from the [WMATA API](https://developer.wmata.com/docs/services/) and the Capital Bikeshare station locations were obtained from their station status [XML feed](https://feeds.capitalbikeshare.com/stations/stations.xml).
+[Capital Bikeshare](https://www.capitalbikeshare.com/system-data) makes its data available to download in quarterly files. For this analysis I downloaded every trip for the most recently available year (2015-Q4 through 2016-Q3). The metro station location data was obtained from the [WMATA API](https://developer.wmata.com/docs/services/) and the bike share station locations were obtained from the Capital Bikeshare station status [XML feed](https://feeds.capitalbikeshare.com/stations/stations.xml).
 
 
 We see that approximately 80% of all rides are from registered users, and 74% occur during the work week.
