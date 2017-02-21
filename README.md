@@ -26,10 +26,10 @@ Registered | 2,520,541
 Weekday | 2,333,344 
 Weekend | 815,974
 
-<br><br><br>
+<br><br>
 
 ![weekday casual v registered](weekday casual v registered.png)
-<br><br><br>
+<br><br>
 
 ---
  
@@ -143,14 +143,6 @@ This map shows all stations, both metro and bikeshare that were used in this ana
 " target="_blank"><img align="middle" src="all_stations_map_image.PNG" 
 alt="Map!" width="800" height="683" border="10" /></a>
 
-
-```python
-fig, ax = plt.subplots(figsize=[6, 4])
-ax.set_ylabel('Average number of rides per hour per day')
-ax.set_title('Capital Bikeshare Weekend Ridership')
-(bikeshare_weekend.groupby('Hour')['Hour'].count() / weekend_days).plot(kind='bar',alpha=0.5, color='r', ax=ax)
-plt.show()
-```
 
 
 ---
