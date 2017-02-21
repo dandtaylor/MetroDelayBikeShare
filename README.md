@@ -32,7 +32,8 @@ Weekend | 815,974
 <br><br>
 
 ---
- 
+## Considering location
+
 By merging the bike share location and bike share rider ship data, and using the `vincenty` function available in the `geopy` package, we can calculate the distance of each bike share station to each metro stations. We can then create flags for if a ride began, or terminated at a bike share station within 0.15 miles of a metro station.
 
 We see that there is a spike right around 0.5 miles for rides concluding near metro stations during the morning rush or beginning during the evening rush. This spike is not present in rides in the opposite directions and not close in proximity to metro stations, and is therefore a strong indication that many commuters are using the bike sharing service to travel approximately half of a mile to the nearest metro station in the morning, and then away from the metro at night.
