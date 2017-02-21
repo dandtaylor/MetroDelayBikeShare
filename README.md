@@ -36,6 +36,7 @@ bikeshare_weekend = bikeshare_rides[~bikeshare_rides['Day'].str[0].isin(list('MT
 <br><br><br>
 
 
+---
 
 Using the `vincenty` function available in the `geopy` package, I then determined which of these stations are within 0.15 miles of a metro station.
 
@@ -134,15 +135,3 @@ All notebooks used for data cleaning and *most* data is available in the reposit
 [Capital Bikeshare](https://www.capitalbikeshare.com/system-data)  
 
 ---
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dandtaylor/MetroDelayBikeShare/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
