@@ -55,7 +55,7 @@ D St & Maryland Ave NE to Columbus Circle / Union Station                       
 15th & F St NE to Columbus Circle / Union Station                                                   |1274
 
 <br>
-The below map indicates the locations of metro stations (green flags), the most popular morning rush hour starting statins (red flags), and the most popular morning rush hour desination stations (blue flgs).
+The below map indicates the locations of metro stations (green flags), the most popular morning rush hour starting statins (red flags), and the most popular morning rush hour desination stations (blue flags).
 <br>
 
 <a href="morning_10_map.html
@@ -76,9 +76,11 @@ Columbus Circle / Union Station to 15th & F St NE                               
 L'Enfant Plaza / 7th & C St SW to Columbus Circle / Union Station                                   |1112
 Eastern Market Metro / Pennsylvania Ave & 7th St SE to 13th & D St NE                               |1083
 USDA / 12th & Independence Ave SW to Columbus Circle / Union Station                                |1069
+
 <br>
-The below map indicates the locations of metro stations (green flags), the most popular evening rush hour starting statins (red flags), and the most popular evening rush hour desination stations (blue flgs).
+The below map indicates the locations of metro stations (green flags), the most popular evening rush hour starting statins (red flags), and the most popular evening rush hour desination stations (blue flags).
 <br>
+
 <a href="evening_10_map.html
 " target="_blank"><img align="middle" src="evening_10_map_image.png" 
 alt="Map!" width="800" height="683" border="10" /></a>
