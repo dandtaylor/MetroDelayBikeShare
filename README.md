@@ -38,6 +38,7 @@ bikeshare_weekend = bikeshare_rides[~bikeshare_rides['Day'].str[0].isin(list('MT
 
 ---
 
+
 Using the `vincenty` function available in the `geopy` package, I then determined which of these stations are within 0.15 miles of a metro station.
 
 Most Popular Morning Rush hour Routes Among Registered Riders | Count
