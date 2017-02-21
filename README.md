@@ -35,8 +35,7 @@ bikeshare_weekend = bikeshare_rides[~bikeshare_rides['Day'].str[0].isin(list('MT
 ![ride distance morning v evening rush](ride distance morning v evening rush.png)
 <br><br><br>
 
-![ride distance evening casual v registered rush](ride distance evening casual v registered rush.png)
-<br><br><br>
+
 
 
 ---
@@ -90,6 +89,10 @@ alt="Map!" width="800" height="683" border="10" /></a>
 
 <br><br><br>
 
+![ride distance evening casual v registered rush](ride distance evening casual v registered rush.png)
+
+<br><br><br>
+
 Most Popular Weekday Routes Among Casual Riders | Count
 :--- | :---:
 Jefferson Dr & 14th St SW to Jefferson Dr & 14th St SW                                                  | 4007
@@ -103,7 +106,7 @@ Jefferson Memorial to Jefferson Dr & 14th St SW                                 
 Jefferson Dr & 14th St SW to Jefferson Memorial                                                         | 1311
 Lincoln Memorial to Ohio Dr & West Basin Dr SW / MLK & FDR Memorials                                    | 1139
 
-<br>
+<br><br>
 For comparison to non-commuter ridership, the below map indicates the locations of metro stations (green flags), the most popular casual rider midweek starting stations (red flags), and the most popular casual rider midweek destination stations (blue flags).
 <br>
 
