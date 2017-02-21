@@ -3,10 +3,12 @@
 
 We see that approximately 80% of all rides are from registered users, and 74% occur during the work week.
 
-Member Type | Population
+Member or Day Type | Population
 :---: | :---:
 Casual | 628,777 
 Registered | 2,520,541 
+Weekday | 2,333,344 
+Weekend | 815,974
 
 <br>
 
