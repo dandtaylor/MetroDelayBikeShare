@@ -35,7 +35,7 @@ Weekend | 815,974
  
 By merging the bike share location and bike share rider ship data, and using the `vincenty` function available in the `geopy` package, we can calculate the distance of each bike share station to each metro stations. We can then create flags for if a ride began, or terminated at a bike share station within 0.15 miles of a metro station.
 
-We see that there is a spike around 0.5 miles for rides concluding near metro stations during the morning rush or beginning during the evening rush. This spike is not present in rides not close in proximity to metro stations and is a strong indication that many commuters are using the bike sharing service to travel approximately half of a mile to the nearest metro station.
+We see that there is a spike right around 0.5 miles for rides concluding near metro stations during the morning rush or beginning during the evening rush. This spike is not present in rides in the opposite directions and not close in proximity to metro stations, and is therefore a strong indication that many commuters are using the bike sharing service to travel approximately half of a mile to the nearest metro station in the morning, and then away from the metro at night.
 
 
 ![ride distance morning rush](ride distance morning rush.png)
@@ -46,15 +46,10 @@ We see that there is a spike around 0.5 miles for rides concluding near metro st
 
 ![ride distance morning v evening rush](ride distance morning v evening rush.png)
 <br><br><br>
-
-
-
-
 ---
 
-
-
-We can support this observation by looking at the most popular routes during each time period both as tables and through mapping.  
+We can support this observation by looking at the most popular routes during each time period both as tables and through mapping. By considering the 10 most popular routes during the morning rush, we can see that many of them began in Northeast DC and ended near the union station metro stop. Then, during the evening rush hour, the trend is reversed as all of the most popular trips originate near metro stations and many of them end in the Northeast region.  
+Furthermore, T-tests comparing ridership in the morning vs. in the evening support the hypothesis that people are riding towards the metro in the morning and away from the metro at night (with 99% confidence). 
 
 Most Popular Morning Rush hour Routes Among Registered Riders | Count
 :--- | :---:
