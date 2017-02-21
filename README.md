@@ -27,7 +27,7 @@ Weekend | 815,974
 <br><br>
 
 ---
-## Considering location and distance
+## Considering location and route distance
 
 By merging the bike share location and bike share rider ship data, and using the `vincenty` function available in the `geopy` package, we can calculate the distance of each bike share station to each metro stations. We can then create flags for if a ride began, or terminated at a bike share station within 0.15 miles of a metro station.
 
