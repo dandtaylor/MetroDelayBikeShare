@@ -125,6 +125,7 @@ alt="Map!" width="800" height="683" border="10" /></a>
 <br><br><br>
 ---
 <br><br><br>
+## Metro stop and Bikeshare station maps used for this analysis
 
 This map shows metro stations (red) and those bikeshare stations which were considered *near* to a metro station. Clicking on the image will load an interactive map that you can explore!
 
