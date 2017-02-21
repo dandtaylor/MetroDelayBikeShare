@@ -1,8 +1,23 @@
 ## Analysis of the impact of metro station location on commuter bikeshare habits
 [Capital Bikeshare](https://www.capitalbikeshare.com/system-data) makes its data available to download in quarterly files. For this analysis I downloaded every trip for the most recently available year (2015-Q4 through 2016-Q3). The metro station location data was obtained from the [WMATA API](https://developer.wmata.com/docs/services/) and the bike share station locations were obtained from the Capital Bikeshare station status [XML feed](https://feeds.capitalbikeshare.com/stations/stations.xml).
 
+By considering both Capital Bikeshare and Metro station data sets together, we can assess how ridership, and ultimately membership, is affected by the location of metro stations under the assumption that many commuters use the two services in conjunction to get to and from work everyday. Through this analysis, we can hope to better understand the behavior of riders and therefore increase ridership through a targeted expansion of bike share coverage.
 
-We see that approximately 80% of all rides are from registered users, and 74% occur during the work week.
+Throughout this analysis I used multiple python libraries – namely pandas, pickle, matplotlib, scipy, geopy, and folium.
+
+It is valuable to initially understand some of the larger trends in the bike share data. By splicing the data by day of the week, and then further by hour, we see that the weekday data has two large spikes associated with the morning and evening rush hour (centered on 8AM and 5PM). 
+
+
+<br>
+
+We can further slice this data up into weekdays or weekends. Visualizing the data as average frequency of rides throughout the day is an effective way of picking out some quick groupings in ride type.
+
+
+![Weekday vs weekend ridership](weekday_v_weekend.png)
+
+<br><br><br>
+ 
+By doing some quick comparisons of the slice sizes, we see that about 74% of rides occur during the work week and about 80% of those are from registered riders (those with a long term membership). 
 
 Member or Day Type | Population
 :---: | :---:
@@ -11,20 +26,17 @@ Registered | 2,520,541
 Weekday | 2,333,344 
 Weekend | 815,974
 
-<br>
-
-We can further slice this data up into weekdays or weekends.
-```python
-bikeshare_weekday = bikeshare_rides[bikeshare_rides['Day'].str[0].isin(list('MTWF'))]
-bikeshare_weekend = bikeshare_rides[~bikeshare_rides['Day'].str[0].isin(list('MTWF'))]
-```
-
-
-![Weekday vs weekend ridership](weekday_v_weekend.png)
 <br><br><br>
 
 ![weekday casual v registered](weekday casual v registered.png)
 <br><br><br>
+
+---
+ 
+By merging the bike share location and bike share rider ship data, and using the `vincenty` function available in the `geopy` package, we can calculate the distance of each bike share station to each metro stations. We can then create flags for if a ride began, or terminated at a bike share station within 0.15 miles of a metro station.
+
+We see that there is a spike around 0.5 miles for rides concluding near metro stations during the morning rush or beginning during the evening rush. This spike is not present in rides not close in proximity to metro stations and is a strong indication that many commuters are using the bike sharing service to travel approximately half of a mile to the nearest metro station.
+
 
 ![ride distance morning rush](ride distance morning rush.png)
 <br><br><br>
@@ -41,7 +53,8 @@ bikeshare_weekend = bikeshare_rides[~bikeshare_rides['Day'].str[0].isin(list('MT
 ---
 
 
-Using the `vincenty` function available in the `geopy` package, I then determined which of these stations are within 0.15 miles of a metro station.
+
+We can support this observation by looking at the most popular routes during each time period both as tables and through mapping.  
 
 Most Popular Morning Rush hour Routes Among Registered Riders | Count
 :--- | :---:
