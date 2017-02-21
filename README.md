@@ -127,7 +127,9 @@ For comparison to non-commuter ridership, the below map indicates the locations 
 " target="_blank"><img align="middle" src="casual_10_map_image.png" 
 alt="Map!" width="800" height="683" border="10" /></a>
 
-<br><br><br><br>
+<br><br><br>
+---
+<br><br><br>
 
 This map shows metro stations (red) and those bikeshare stations which were considered *near* to a metro station. Clicking on the image will load an interactive map that you can explore!
 
